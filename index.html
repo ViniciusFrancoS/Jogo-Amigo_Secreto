@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amigo Secreto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather:ital,wght@1,900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="main-content">
+        <header class="header-banner">
+            <img src="amigo-secreto.png" alt="Ilustração de uma pessoa segurando um presente" width="300">
+        </header>
+
+        <section class="input-section">
+            <h2 class="section-title">Vamos começar!</h2>
+
+            <div class="input-wrapper">
+                <input type="text" id="amigo" class="input-name" placeholder="Insira os nomes dos seus amigos">
+                <button class="button-add" onclick="adicionarAmigo()">Adicionar</button>
+            </div>
+
+            <h3>Amigos Adicionados:</h3>
+            <ul id="listaAmigos">
+                </ul>
+
+            <div class="button-container">
+                <button class="button-draw" onclick="sortearAmigo()">Sortear</button>
+                <button class="button-restart" onclick="reiniciar()">Reiniciar</button>
+            </div>
+            
+            <div id="resultado" class="result-list">
+                </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
